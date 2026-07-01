@@ -8,22 +8,6 @@ The application is containerized using Docker and deployed to an Azure Kubernete
 
 The React application runs inside Kubernetes pods and is exposed through a Kubernetes service for external access.
 
-## Deployment Flow
-
-React Application
-|
-↓
-Docker Image
-|
-↓
-Azure Container Registry (ACR)
-|
-↓
-Azure Kubernetes Service (AKS)
-|
-↓
-Live Application
-
 ## Technologies
 
 - React
