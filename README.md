@@ -1,16 +1,33 @@
-# React + Vite
+# Movie Pisso
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Movie Pisso is a sample React application deployed on Azure Kubernetes Service (AKS).
 
-Currently, two official plugins are available:
+## Deployment
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The application is containerized using Docker and deployed to an Azure Kubernetes Service (AKS) cluster using Kubernetes deployment and service configurations.
 
-## React Compiler
+The React application runs inside Kubernetes pods and is exposed through a Kubernetes service for external access.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Deployment Flow
 
-## Expanding the Oxlint configuration
+React Application
+|
+↓
+Docker Image
+|
+↓
+Azure Container Registry (ACR)
+|
+↓
+Azure Kubernetes Service (AKS)
+|
+↓
+Live Application
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Technologies
+
+- React
+- Docker
+- Kubernetes
+- Azure Container Registry (ACR)
+- Azure Kubernetes Service (AKS)
